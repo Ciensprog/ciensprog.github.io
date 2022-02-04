@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Home from './pages/Home';
 
+import 'virtual:svg-icons-register';
 import './index.css';
 
 /*
