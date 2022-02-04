@@ -1,18 +1,13 @@
-import Header from '../../components/Header';
-
 /*
 |--------------------------------------------------------------------------
-| Page
+| Data
 |--------------------------------------------------------------------------
 |
 | ...
 |
 */
 
-export default function Home() {
-  return (
-    <div className="page-home">
-      <Header />
-    </div>
-  );
-}
+export const developer = {
+  name: 'Leonardo López',
+  position: 'Software Developer',
+};

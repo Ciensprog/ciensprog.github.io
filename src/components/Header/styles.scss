@@ -1,0 +1,63 @@
+.main-header {
+  padding: 30px 50px;
+
+  .controls {
+    // padding: 10px 0;
+
+    span {
+      $size: 16px;
+
+      border-radius: 50%;
+      display: block;
+      height: $size;
+      width: $size;
+
+      &:not(:first-child):not(:last-child) {
+        margin: 0 8px;
+      }
+    }
+  }
+
+  .editor {
+    // background-color: rgba(white, .05); // TEMP
+
+    counter-reset: section 199;
+    font-size: 20px;
+    line-height: 1.2em;
+    // margin-top: 15px;
+    padding: 10px 0;
+
+    &-line {
+      position: relative;
+
+      &:before {
+        color: #767594;
+        content: counter(section);
+        margin-left: 12px; // EDIT
+        margin-right: 20px;
+      }
+
+      &:not(:first-child) {
+        counter-increment: section;
+      }
+    }
+
+    .property {
+      &-method {
+        position: relative;
+
+        &.with-error-semicolon {
+          &:after {
+            bottom: -10px;
+            color: #FF5677;
+            content: '...';
+            display: inline-block;
+            // letter-spacing: .02em;
+            position: absolute;
+            right: -15px;
+          }
+        }
+      }
+    }
+  }
+}
