@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .main-header {
   padding: 30px 50px;
 
@@ -52,7 +54,7 @@
           height: $size;
           left: 4px;
           position: absolute;
-          top: calc(50% - #{$size / 2});
+          top: calc(50% - #{math.div($size, 2)});
           width: $size;
         }
       }
