@@ -1,3 +1,5 @@
+import { MouseEvent } from 'react';
+
 import SvgIcon from '../SvgIcon';
 
 import './styles.scss';
@@ -11,6 +13,17 @@ import './styles.scss';
 |
 */
 
+const actionReloadPage = (event: MouseEvent<HTMLAnchorElement>) => {
+  event.preventDefault();
+
+  const probability = 35; // Percentage
+  const randomNumber = Math.floor(Math.random() * 100);
+
+  if (randomNumber <= probability) {
+    window.location.reload();
+  }
+};
+
 export default function BrowserNavigation() {
   return (
     <section className="browser-navigation bg-white flex items-center justify-center">
@@ -21,9 +34,9 @@ export default function BrowserNavigation() {
           </div>
           <div className="text-indicator" />
         </div>
-        <div className="reload ml-auto">
+        <a href="#" className="reload cursor-default ml-auto" onClick={actionReloadPage}>
           <SvgIcon name="reload" />
-        </div>
+        </a>
       </div>
       <div className="menu-dots ml-auto rounded">
         <span />
