@@ -1,0 +1,28 @@
+.banner-hello {
+  background-color: rgba(#E7FFFF, .3);
+  min-height: 250px;
+  padding: 30px 20px;
+  position: relative;
+
+  &:before {
+    background-color: #E7FFFF;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    z-index: -1;
+  }
+
+  .banner-text {
+    font-size: 42px;
+    line-height: .9;
+
+    & > div:last-child:after {
+      color: #FF5677;
+      content: '.';
+      margin-left: -5px;
+    }
+  }
+}

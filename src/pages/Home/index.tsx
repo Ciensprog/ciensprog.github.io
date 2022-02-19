@@ -1,4 +1,5 @@
 import Header from '../../components/Header';
+import Hello from '../../components/Hello';
 import Footer from '../../components/Footer';
 
 /*
@@ -15,6 +16,7 @@ export default function Home() {
     <>
       <Header />
       <main className="page-home">
+        <Hello />
         Page: Home
       </main>
       <Footer />
