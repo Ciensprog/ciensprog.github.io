@@ -20,6 +20,7 @@ module.exports = {
         grape: '#343352',
         pitahaya: '#FFBCD1',
         'purple-gray': '#767594',
+        sky: '#E7FFFF',
         strawberry: '#FF5677',
       },
     },
