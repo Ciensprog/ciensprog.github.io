@@ -40,6 +40,22 @@
       &:not(:first-child) {
         counter-increment: section;
       }
+
+      &.add-dot-error {
+        &:after {
+          $size: 5px;
+
+          background-color: #FF5677;
+          border-radius: 50%;
+          content: '';
+          display: block;
+          height: $size;
+          left: 4px;
+          position: absolute;
+          top: calc(50% - #{$size / 2});
+          width: $size;
+        }
+      }
     }
 
     .property {

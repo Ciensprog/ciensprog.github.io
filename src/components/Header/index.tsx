@@ -31,7 +31,7 @@ export default function Header() {
             <span className="property-text text-banana">'{developer.name}'</span>
             <span className="property-method text-pitahaya">);</span>
           </div>
-          <div className="editor-line">
+          <div className="editor-line add-dot-error">
             <span className="property-class-name text-strawberry">Profile</span>
             <span className="property-dot text-editor-dot">.</span>
             <span className="property-method text-pitahaya">setPosition(</span>
