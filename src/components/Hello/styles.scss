@@ -1,6 +1,7 @@
 .banner-hello {
   background-color: rgba(#E7FFFF, .3);
-  min-height: 250px;
+  height: calc(100% - 70px);
+  // min-height: 250px;
   padding: 30px 20px;
   position: relative;
 
@@ -16,13 +17,17 @@
   }
 
   .banner-text {
-    font-size: 42px;
+    font-size: 72px;
     line-height: .9;
 
     & > div:last-child:after {
       color: #FF5677;
       content: '.';
       margin-left: -5px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 48px;
     }
   }
 }

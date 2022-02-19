@@ -1,6 +1,5 @@
-import Header from '../../components/Header';
+import BrowserNavigation from '../../components/BrowserNavigation';
 import Hello from '../../components/Hello';
-import Footer from '../../components/Footer';
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +13,10 @@ import Footer from '../../components/Footer';
 export default function Home() {
   return (
     <>
-      <Header />
-      <main className="page-home">
+      <main className="page-home page-extend">
+        <BrowserNavigation />
         <Hello />
-        Page: Home
       </main>
-      <Footer />
     </>
   );
 }
